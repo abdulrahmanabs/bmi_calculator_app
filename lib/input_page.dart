@@ -16,7 +16,7 @@ class InputPage extends StatefulWidget {
 }
 
 class _InputPageState extends State<InputPage> {
-  Gender? selectedGender;
+  Gender selectedGender = Gender.male;
   int currentHeight = 130;
   int currentWeight = 20;
   int currentAge = 10;
@@ -196,8 +196,11 @@ class _InputPageState extends State<InputPage> {
           BottomButton(
             text: "CALCULATE",
             onTap: () {
-              CalculatorBrain calc =
-                  CalculatorBrain(height: currentHeight, weight: currentWeight);
+              CalculatorBrain calc = CalculatorBrain(
+                  height: currentHeight,
+                  weight: currentWeight.toDouble(),
+                  age: currentAge,
+                  gender: selectedGender);
               Navigator.push(
                   context,
                   MaterialPageRoute(
