@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'constants.dart';
+
 class CardChild extends StatelessWidget {
   CardChild({required this.icon, required this.text});
 
@@ -21,8 +23,7 @@ class CardChild extends StatelessWidget {
         ),
         Text(
           text,
-          style: TextStyle(
-              fontSize: 20, color: Color.fromARGB(255, 206, 205, 205)),
+          style: kLabelTextStyle,
         )
       ],
     );
