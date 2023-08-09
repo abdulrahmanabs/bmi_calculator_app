@@ -10,6 +10,9 @@ The BMI Calculator App is a simple mobile application built with Flutter that al
 
 ![ezgif-2-5b953c8c50](https://github.com/abdulrahmanabs/bmi_calculator_app/assets/58333909/e3917c7c-9b7e-4e11-914a-84d1b88499c4)
 
+# You can test it here : 
+
+https://abdulrahmanabs.github.io/BMI-Calculator/
 
 ## Dependencies
 
